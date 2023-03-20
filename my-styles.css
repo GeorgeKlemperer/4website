@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300&display=swap");
+
+html {
+  font-size: 16px;
+  font-family: "Newsreader", serif;
+}
+
+.date {
+  text-align: right;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 20px 0;
+  color:black;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+body {
+  margin: 0 auto; /*When you set two values on a property like margin or padding, the first value affects the element's top and bottom side (setting it to 0 in this case); the second value affects the left and right side. (Here, auto is a special value that divides the available horizontal space evenly between left and right)/
+      /* background-image: url("images/akitsushima.jpeg"); */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+figure {
+  margin: 0;
+}
+
+
+.sml {
+  line-height: 0;
+}
+
+.social-media-logos {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.social-media-logos:hover {
+    -webkit-filter: opacity(50%);
+}
+/*sets images with "social-media-logos" class to a set gheight width and padding */
