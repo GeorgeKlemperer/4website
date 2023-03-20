@@ -5,14 +5,52 @@ html {
   font-family: "Newsreader", serif;
 }
 
+body {
+    width: 90%;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-content: center;
+      }
+  }
+  /* @media is used in media queries to apply different styles in different conditions. Media queries can be used to check: width and height of viewport, width and height of device, orientation of device, and resolution.*/
+  /* This @media rule will change "flex-container" to a column when viewport < "max-width"*/
+
 .date {
-  text-align: right;
+  text-align: left;
+}
+
+.navbar {
+    display: flex;
+    position: static;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.navbar a {
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    -webkit-filter: opacity(50%);
+    cursor: pointer;
 }
 
 p {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 1px;
+  margin: auto;
 }
 
 h1 {
@@ -26,7 +64,20 @@ h1 {
 h2 {
   margin: 0;
   padding: 5px 0;
+  font-size: 30px;
 }
+
+.portraitfigure {
+    float: left;
+    /* width: 400px; */
+    width: 30%;
+    margin: 0 10px 0 0;
+  }
+  
+  .portraitimage {
+    width: 100%;
+    margin: 0;
+  }
 
 body {
   margin: 0 auto; /*When you set two values on a property like margin or padding, the first value affects the element's top and bottom side (setting it to 0 in this case); the second value affects the left and right side. (Here, auto is a special value that divides the available horizontal space evenly between left and right)/
