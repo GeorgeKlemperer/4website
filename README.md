@@ -9,4 +9,4 @@
 
 My main website for my FaC application! It contains some information about me and why I want to join FaC. It also contains my project gallery which links to the other projects in my application portfolio.
 
-<img src="images/selfportrait.jpg" alt="Alt text">
+<img src="images/selfportrait.jpeg" alt="Alt text">
