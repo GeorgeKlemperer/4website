@@ -12,4 +12,4 @@ My main website for my FaC application! It contains some information about me an
 <img src="images/selfportrait.jpeg" alt="Self-portrait"
 style="display: inline-block; 
 margin: 0 auto; 
-max-width: 300px">
+width: 50%">
