@@ -151,3 +151,123 @@ figure {
     -webkit-filter: opacity(50%);
 }
 /*sets images with "social-media-logos" class to a set gheight width and padding */
+
+
+
+/* Project Gallery CSS Pasted Below */
+.pgallerycontainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-evenly;
+}
+/*A "Flexible Layout" must have a parent element with the display property set to flex.*/
+/* by default flex items are laid out in source order */
+
+@media (max-width: 600px) {
+  .pgallerycontainer {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+/* @media is used in media queries to apply different styles in different conditions. Media queries can be used to check: width and height of viewport, width and height of device, orientation of device, and resolution.*/
+/* This @media rule will change "flex-container" to a column when viewport < "max-width"*/
+
+
+.pgallerycontainer > div { /*this will target <div> elements that are direct children (>) of .flex-container elements)*/
+  /* background-color: #f1f1f1; */
+  flex: auto;
+  width:300px;
+  /* max-width: 600px; */
+  margin: 10px;
+  text-align: center;
+  line-height: normal;
+  font-size: 30px;
+  border-radius: 25px; /*adds curves to cards*/
+}
+
+.pgallerycontainer > .fc1 {
+  background-image: url("images/akitsushima.jpeg");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: 800px;
+  color:black
+}
+
+.pgallerycontainer > .fc2 {
+  background-image: url("images/moviedataimage.jpg");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+  color: white; 
+}
+
+.pgallerycontainer > .fc3 {
+  background-image: url("images/ponggame.png");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: 400px;
+  background-size: cover;
+  color: white; 
+}
+
+.pgallerycontainer > .fc4 {
+  background-image: url("images/favicon.png");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: auto;
+  color: red; 
+}
+
+
+.pgallerycontainer h3 { /*a space instead of a ">" will select all descendants of .pgallerycontainer elements*/
+margin: 10%;;
+font-size: 100%;
+/* mix-blend-mode: darken; */
+padding: 20px 0;
+}
+
+.pgallerycontainer button { /*a space instead of a ">" will select all descendants of .flex-container elements*/
+  border: none;
+appearance: none;
+background-color: inherit;
+background: none;
+  }
+
+  .buttonimage {
+      width: 15%;
+      cursor: pointer;
+      float: right;
+      margin:2.5% 2.5%;
+      padding: 0;
+  }
+
+  .buttonimage:active {
+      filter: brightness(50%);
+  }
+
+
+/* Popup container */
+.popup {
+  position: relative;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px 0;
+
+  position: relative;
+  bottom: 45px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .reveal {
+  visibility: visible;
+}
