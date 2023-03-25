@@ -16,7 +16,7 @@ body {
 }
 
 @media (max-width: 800px) {
-    .flex-container {
+    .pgallerycontainer {
       flex-direction: column;
       align-content: center;
     }
