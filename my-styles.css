@@ -153,6 +153,14 @@ figure {
   margin: 0;
 }
 
+@media (max-width: 800px) {
+  /* To centre image need to turn off float and set side margins to auto */
+  .portraitfigure {
+    float: none; 
+    margin: 0 auto; 
+  }
+}
+
 .smlinks {
     margin: 20px 0 0 0;
 }
