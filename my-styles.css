@@ -250,6 +250,14 @@ figure {
   color: red; 
 }
 
+.pgallerycontainer > .fc5 {
+  background-image: url("images/colourPalette.png");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size:contain;
+  color: white; 
+}
+
 
 .pgallerycontainer h3 { /*a space instead of a ">" will select all descendants of .pgallerycontainer elements*/
 margin: 10%;;
